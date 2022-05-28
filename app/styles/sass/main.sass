@@ -70,6 +70,8 @@ body
         font-size: 20px
         color: #FFFFFF
         text-decoration: none
+        &:hover
+            box-shadow: 0px 4px 20px #1972DA
 .firstcreen
     position: relative
     background: #69B6FA
@@ -242,17 +244,31 @@ body
         font-size: 25px
         color: #69B6FA
         text-decoration: none
+        position: relative
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 26px
+            height: 10px
+            background: url(../images/dist/arrow.svg)
+            right: -46px
+            top: 5px
+        &:hover
+            color: #1972DA
+            &::after
+                background: url(../images/dist/arrowhover.svg)
 .news
     margin-top: 120px
     margin-bottom: 100px
-.news__offer__main
+.main__offer
     h3
         font-family: 'Gothic A1'
         font-style: normal
         font-weight: 700
         font-size: 50px
         color: #1972DA
-.news__offer__disc
+.main__offer__disc
     margin-top: 15px
     p
         font-family: 'Gothic A1'
@@ -262,14 +278,18 @@ body
         color: #646464
 .news__item
     background: #fff
-    max-width: 367px
+    // max-width: 367px
     border-radius: 30px
-    margin-right: 25px
     &:last-child
         margin-right: 0
+    &:hover
+        box-shadow: 5px 4px 20px rgba(25, 114, 218, 0.58)
 .news__items
     margin-top: 100px
     display: flex
+    padding-bottom: 100px
+.news__content
+    margin-left: 5%
 .news__item__img
     max-height: 196px
     img
@@ -341,5 +361,279 @@ body
         font-size: 10px
         color: #1972DA
         text-decoration: none
+.news__paggination
+    display: flex
+    flex-direction: row-reverse
+.news__paggination__progress
+    position: relative
+    width: 90%
+.news__paggination__arrows
+    width: 176px
+    position: relative
+    margin-right: 33px
+.swiper-kolvo
+    display: flex!important
+    justify-content: center!important
+.swiper-button-next
+    right: 0!important
+.swiper-button-prev 
+    left: 0!important
+.feedback
+    background-image: url(../images/dist/feedback.png)
+    position: relative
+    margin-bottom: 120px
+    background-size: cover
+.feedback__back
+    background: #69B6FA
+    opacity: 0.8
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+.feedback__items
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 100px 0
+.feedback__offer
+    h3
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 50px
+        color: #FFFFFF
+.feedback__disc
+    margin-top: 45px
+    margin-bottom: 80px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #FFFFFF
+.team
+    margin-bottom: 100px
+    padding-left: 5%
+    padding-right: 34px
+.team__offer
+    margin-bottom: 80px
+.team__items
+    display: flex
+    padding-bottom: 100px
+.team__item
+    width: 337px
+    // margin-right: 25px
+.team__item__img
+    width: 100%
+    height: 394px
+    img
+        border-top-left-radius: 30px
+        border-top-right-radius: 30px
+        object-fit: cover
+        width: 100%
+        height: 100%
+.team__item__disc
+    background: #fff
+    padding-left: 15px
+    padding-right: 26px
+    border-bottom-left-radius: 30px
+    border-bottom-right-radius: 30px
+    box-shadow: 5px 4px 20px #E3EFFF
+.team__disc__name
+    padding-top: 20px
+    margin-bottom: 17px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        color: #1972DA
+.team__disc__spec
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        color: #1972DA
+.team__disc__maindisc
+    margin-top: 10px
+    padding-bottom: 57px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 10px
+        color: #646464
+.reviews
+    margin-bottom: 100px
+    position: relative
+    padding-bottom: 73px
+.reviews__back
+    position: absolute
+    background: #69B6FA
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    opacity: 0.1
+.reviews__offer
+    padding-top: 70px
+    position: relative
+    z-index: 1
+.reviews__right
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #1972DA
+        max-width: 1088px
+.reviews__items
+    position: relative
+    // z-index: 1
+.reviews__item
+    display: flex
+    justify-content: center
+    align-items: center
+.reviews__left
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 80px
+.reviews__left__img
+    img
+        border-radius: 100%
+.reviews__left__name
+    margin-top: 10px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        color: #1972DA
+.indexcontacts
+    margin-bottom: 100px
+.indexcontants__items
+    display: flex
+    justify-content: space-between
+.indexcontacts__disc__link
+    display: flex
+    flex-direction: column
+    a
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 50px
+        color: #1972DA
+        opacity: 0.7
+        text-decoration: none
+        margin-bottom: 5px
+        &:last-child
+            margin-bottom: 0
+.indexcontacts__disc__info
+    margin-top: 55px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        color: #646464
+        margin-bottom: 5px
+        &:last-child
+            margin-bottom: 0
+        &:nth-child(3)
+            margin-top: 37px
+.indexcontacts__form__input
+    display: flex
+    flex-direction: column
+    input
+        color: #1972DA
+        width: 661px
+        height: 45px
+        background: rgba(25, 114, 218, 0.2)
+        border-radius: 30px
+        border: none
+        text-indent: 25px
+        margin-bottom: 33px
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        color: #1972DA
+        &:last-child
+            margin-bottom: 0
+.indexcontacts__form__check
+    margin-top: 26px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    label
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        color: #646464
+        opacity: 0.5
+        margin-left: 13px
+.indexcontacts__form__btn
+    margin-top: 65px
+    input
+        width: 279px
+        height: 51px
+        background: #1972DA
+        border-radius: 30px
+        outline: none
+        border: none
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #FFFFFF
+.map
+    margin-bottom: 100px
+.map__items
+    height: 442px
+footer
+    padding-bottom: 100px
+.footer__items
+    display: flex
+    justify-content: space-between
+.footer__logo__disc
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        color: #1972DA
+        opacity: 0.6
+        max-width: 277px
+.footer__links
+    display: flex
+.footer__links__item
+    &:last-child
+        margin-left: 214px
+    ul
+        li
+            list-style: none
+            margin-bottom: 19px
+            &:last-child
+                margin-bottom: 0
+            a
+                text-decoration: none
+                font-family: 'Gothic A1'
+                font-style: normal
+                font-weight: 400
+                font-size: 20px
+                color: #1972DA
+                max-width: 209px
+                display: block
+.footer__links__item__seti
+    a
+        margin-right: 16px
+        &:last-child
+            margin-right: 0
 @import config
 @import 'blocks/**/*'

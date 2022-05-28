@@ -1,0 +1,345 @@
+@use 'sass:math'
+@use 'sass:color'
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    background: #F8FBFF!important
+.limiter
+    width: 1724px
+    margin: 0 auto
+.header__items
+    align-items: center
+    padding-top: 51px
+    padding-bottom: 34px
+    display: flex
+    justify-content: space-between
+.header__logo
+    // width: 173px
+    // height: 100%
+    img
+        // width: 100%
+        // height: 100%
+.header__links
+    ul
+        display: flex
+        li
+            list-style: none
+            margin-right: 45px
+            &:last-child
+                margin-right: 0
+            a
+                font-family: 'Gothic A1'
+                font-style: normal
+                font-weight: 400
+                font-size: 25px
+                color: #1972DA
+                text-decoration: none
+.header__information
+    display: flex
+    flex-direction: column
+    a
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 30px
+        color: #1972DA
+        text-decoration: none
+        text-align: right
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        color: #646464
+        margin-bottom: 0
+        text-align: right
+.main__popup
+    a
+        display: flex
+        width: 219px
+        height: 45px
+        border-radius: 30px
+        background: #1972DA
+        align-items: center
+        justify-content: center
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        color: #FFFFFF
+        text-decoration: none
+.firstcreen
+    position: relative
+    background: #69B6FA
+    background-image: url(../images/dist/firstbackmain.png)
+    background-size: contain
+    background-position: bottom
+.firstcreen__backmain
+    position: absolute
+    right: 0
+    top: 0
+.firstcreen__right
+    max-width: 1027px
+    max-height: 746px
+    img
+        width: 100%
+        height: 100%
+.firstscreenitems
+    height: 859px
+.firstcreen__content
+    padding-top: 165px
+.firstscreen__mainoffer
+    h1
+        margin-bottom: 0
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 120px
+        color: #E8F1FA
+        text-transform: uppercase
+.firstcreen__disc
+    margin-bottom: 60px
+    h2
+        margin-bottom: 0
+        max-width: 562px
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #FFFFFF
+        line-height: 30px
+.backfirst
+    position: absolute
+    bottom: -9px
+.present
+    margin-top: -150px
+    position: relative
+    z-index: 2
+.present__items
+    display: flex
+.present__img__bottom
+    display: flex
+    align-items: center
+    margin-left: 100px
+    margin-top: -30px
+.present__img__main
+    width: 497px
+    height: 497px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+.present__img__bottom__first
+    width: 180px
+    height: 180px
+    margin-right: 60px
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+.present__img__bottom__second
+    width: 305px
+    height: 305px
+    border-radius: 50%
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+.present__info
+    margin-top: 230px
+    margin-left: 40px
+.present__info__offer
+    h3
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        color: #69B6FA
+        line-height: 50px
+.present__info__disc
+    margin-top: 50px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        line-height: 30px
+        color: #5C5C5C
+        margin-bottom: 23px
+        &:last-child
+            margin-bottom: 0
+.Benefits
+    margin-top: 63px
+.Benefits__items
+    display: flex
+    justify-content: space-between
+.Benefits__item__disc
+    p
+        max-width: 300px
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 25px
+        color: #646464
+.services
+    margin-top: 125px
+.services__offer
+    margin-bottom: 87px
+    h3
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 50px
+        color: #1972DA
+.services__img
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    background: #69B6FA
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+        width: 136px
+        height: 139px
+.services__items
+    display: flex
+    justify-content: center
+.services__item
+    margin-right: 110px
+    &:last-child
+        margin-right: 0
+.services__disc
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #646464
+.services__link
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 97px
+.services__link__line
+    height: 1.5px
+    background: #69B6FA
+    width: 100%
+.services__link__button
+    margin-left: 45px
+    width: 157px
+    margin-right: 50px
+    a
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        color: #69B6FA
+        text-decoration: none
+.news
+    margin-top: 120px
+    margin-bottom: 100px
+.news__offer__main
+    h3
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 50px
+        color: #1972DA
+.news__offer__disc
+    margin-top: 15px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #646464
+.news__item
+    background: #fff
+    max-width: 367px
+    border-radius: 30px
+    margin-right: 25px
+    &:last-child
+        margin-right: 0
+.news__items
+    margin-top: 100px
+    display: flex
+.news__item__img
+    max-height: 196px
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 30px 30px 0px 0px
+.news__item__date
+    position: relative
+    margin-top: 30px
+    margin-bottom: 20px
+    padding-left: 15px
+    padding-right: 31px
+.news__item__date__teg
+    right: 0
+    top: -5px
+    position: absolute
+    width: 83px
+    height: 22px
+    background: #1972DA
+    border-radius: 30px 0px 0px 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        color: #FFFFFF
+.news__item__date__date
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 10px
+        color: #1972DA
+.news__item__offer
+    padding-left: 15px
+    padding-right: 31px
+    margin-bottom: 20px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        color: #1972DA
+        max-width: 214px
+.news__item__disc
+    padding-left: 15px
+    padding-right: 31px
+    margin-bottom: 25px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 20px
+        color: #646464
+        opacity: 0.6
+.news__item__btn
+    padding-left: 15px
+    padding-right: 31px
+    padding-bottom: 32px
+    a
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 10px
+        color: #1972DA
+        text-decoration: none
+@import config
+@import 'blocks/**/*'

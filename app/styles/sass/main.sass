@@ -9,6 +9,8 @@ body
 .limiter
     width: 1724px
     margin: 0 auto
+header
+    position: relative
 .header__items
     align-items: center
     padding-top: 51px
@@ -207,13 +209,13 @@ body
     img
         width: 136px
         height: 139px
-.services__items
-    display: flex
-    justify-content: center
+// .services__items
+//     display: flex
+//     justify-content: center
 .services__item
-    margin-right: 110px
-    &:last-child
-        margin-right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
 .services__disc
     display: flex
     justify-content: center
@@ -594,6 +596,7 @@ body
         font-size: 25px
         color: #FFFFFF
 .map
+    margin-top: 40px
     margin-bottom: 100px
 .map__items
     height: 442px
@@ -868,6 +871,12 @@ footer
         width: 38px
         height: 38px
         background: url(../images/dist/servisesarrowopen.svg)
+.activenew
+    position: relative
+    &::after
+        content: ''
+        display: block
+        position: absolute
 .panel 
     background-color: white
     display: none
@@ -1008,18 +1017,496 @@ footer
     justify-content: center
     align-items: center
 
+.contacts__item
+    font-family: 'Gothic A1'
+    font-style: normal
+    font-weight: 400
+    font-size: 25px
+    color: #1972DA
+    border: none
+    background: none
+    cursor: pointer
+    padding: 20px 0
+    position: relative
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        right: -40px
+        top: 27.5px
+        background: url(../images/dist/after.svg)
+        width: 18px
+        height: 14px
+        transform: rotate(180deg)
+.window
+    margin-top: 20px
+    p
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 25px
+        color: #646464
+.activenew
+    position: relative
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        right: -40px
+        top: 29px
+        background: url(../images/dist/after.svg)
+        width: 18px
+        height: 14px
+        transform: rotate(360deg)
+.contacts__sertificates
+    display: flex
+    img
+        margin-right: 15px
+.contacts__docs
+    display: flex
+    flex-direction: column
+    a
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        color: #1972DA
+        opacity: 0.7
+        text-decoration: none
+.burger
+    width: 41px
+    height: 41px
+    background: #1972DA
+    border-radius: 5px
+    display: none
+    position: absolute
+    right: 2.5%
+    top: 50%
+    transform: translate(0%, -50%)
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+.burger__items
+    width: 504px
+    height: 100vh
+    z-index: 5
+    position: absolute
+    left: 0
+    top: 0
+    background: #fff
+.none
+    display: none
+.block
+    display: block
+.burger__close
+    z-index: 1
+    position: absolute
+    left: 25px
+    top: 40px
+.burger__items__content
+    padding-top: 100px
+.burger__items__item
+    height: 50px
+    a
+        height: 100%
+        width: 100%
+        display: flex
+        padding-left: 10px
+        display: flex
+        align-items: center
+        font-family: 'Gothic A1'
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        color: #1972DA
+        text-decoration: none
+        &:hover
+            background: C7DDF2
+            color: #69B6FA
+.main__logo
+    a   
+        width: 100%
+        height: 100%
 
 
 
 
 
-
-
-
-
-
-
-
-
+@media (max-width: 1724px)
+    .limiter
+        width: 95%
+    .team
+        padding-right: 5%
+@media (max-width: 1725px)
+    .firstcreen__backmain
+        display: none
+    .firstcreen__content
+        display: flex
+        flex-direction: column
+        align-items: center
+    .news__main__item
+        max-width: 100%
+        width: 33%
+    .news__main__item__img
+        max-height: 100%
+@media (max-width: 1501px)
+    .newsinner__items
+        flex-direction: column-reverse
+    .newsinner__content__disc
+        p
+            max-width: 100%
+    .header__information
+        padding-right: 50px
+    .burger
+        display: block
+    .reviews__item
+        flex-direction: column
+    .reviews__left
+        margin-right: 0
+    .reviews__right
+        p 
+            padding-right: 7%
+            padding-left: 7%
+    .header__links
+        display: none
+    .header__popup
+        display: none
+@media (max-width: 1352px)
+    .contacts__sertificates
+        flex-wrap: wrap
+@media (max-width: 1263px)
+    .Benefits__item
+        margin-bottom: 10px
+@media (max-width: 1200px)
+    .indexcontacts__form__input
+        input
+            width: 100%
+    .accordion
+        width: 100%
+    .servisecinner__item
+        width: 100%
+@media (max-width: 1264px)
+    .present__img__bottom__first
+        display: none
+    .present__img
+        display: flex
+        margin-top: 100px
+    .backfirst
+        img
+            width: 100%
+    .present__info
+        margin-top: 25px
+    .present__items
+        flex-direction: column
+    .present__info
+        margin-left: 0
+    .Benefits__items
+        flex-wrap: wrap
+    .reviews__right
+        p
+            font-size: 14px
+@media (max-width: 1052px)
+    .feedback__offer
+        h3
+            font-size: 40px
+@media (max-width: 1000px)
+    .firstcreen__content
+        padding-top: 85px
+    .firstscreenitems
+        height: 560px
+    .indexcontacts__disc__link
+        a
+            font-size: 38px
+    .indexcontacts__disc__info
+        margin-top: 0
+    .indexcontacts__disc__info 
+        p
+            &:nth-child(3)
+                margin-top: 0
+    .indexcontacts__form
+        form
+            margin-top: 10px
+            input
+                margin-bottom: 20px
+    .indexcontacts__form__btn
+        margin-top: 0
+    .indexcontacts__form__check
+        justify-content: flex-start
+        align-items: flex-start
+    .indexcontacts
+        margin-top: 20px
+        margin-bottom: 0
+    .indexcontants__items
+        flex-direction: column
+    .news__items
+        margin-top: 40px
+@media (max-width: 957px)
+    .services__img
+        width: 80%
+        height: 130px
+        img
+            width: 60%
+            height: 100%
+            object-fit: contain
+    .present__img__bottom
+        margin-left: 0
+    .present__img
+        justify-content: space-between
+@media (max-width: 868px)
+    .news__main__item
+        width: 49%
+@media (max-width: 800px)
+    .present__info__offer
+        h3
+            font-size: 28px
+            line-height: unset
+    .servisecinner__item__content__item
+        padding: 0 20px
+    .accordion
+        padding-left: 20px
+    .accordion
+        &::after
+            right: 20px
+    .footer__items
+        flex-direction: column
+        justify-content: center
+    .footer__links
+        flex-direction: column
+        align-items: center
+    .footer__logo
+        display: flex
+        flex-direction: column
+        align-items: center
+    .footer__links__item
+        margin-top: 15px
+    .footer__links__item
+        &:last-child
+            margin-left: 0
+    .footer__links__item 
+        ul 
+            li 
+                a
+                    max-width: 100%
+                    text-align: center
+    footer
+        padding-bottom: 20px
+    .footer__links__item__seti
+        display: flex
+        justify-content: center
+@media (max-width: 845px)
+    .present__img__main
+        width: 100%
+        height: 100%
+        img
+            object-fit: contain
+    .present__img__bottom
+        margin-top: 0
+    .present__img__bottom__second
+        width: 100%
+        height: unset
+        img
+            object-fit: cover
+    .servises__inner
+        margin-top: 20px
+    .news__main__pagg
+        margin-top: 0
+        padding-bottom: 20px
+    .page__offer
+        margin-top: 0
+        margin-bottom: 0
+    .main__offer
+        h1
+            font-size: 28px
+    .feedback__offer
+        h3
+            font-size: 30px
+    .header__information
+        a
+            font-size: 24px
+        p
+            font-size: 16px
+@media (max-width: 780px)
+    .team
+        margin-bottom: 50px
+    .news__items
+        padding-bottom: 50px
+    .news
+        margin-bottom: 50px
+    .team__items
+        padding-bottom: 50px
+    .main__logo
+        width: 120px
+        img
+            object-fit: contain
+    .header__items
+        padding-top: 20px
+        padding-bottom: 20px
+    .firstscreen__mainoffer
+        h1
+            font-size: 15vw
+    .firstcreen__disc
+        h2
+            font-size: 3vw
+            text-align: center
+@media (max-width: 700px)
+    .main__offer
+        h3
+            font-size: 38px
+        p
+            font-size: 18px
+    .feedback
+        margin-bottom: 60px
+    .feedback__offer
+        h3
+            font-size: 4.7vw
+    .feedback__disc
+        p
+            font-size: 3.2vw
+@media (max-width: 632px)
+    .kroshki
+        margin-bottom: 20px
+        padding-top: 20px
+    .newsinner__offer
+        h1
+            font-size: 38px
+    .Benefits__item__disc
+        p
+            max-width: 100%
+    .accordion
+        font-size: 18px
+    .contacts__item
+        padding: 10px 0
+    .contacts__item
+        &::after
+            top: 20px
+    .activenew
+        &::after
+            top: 20px
+    .newsinner__img
+        margin-top: 20px
+    .team__offer
+        margin-bottom: 15px
+    .reviews__offer
+        padding-top: 30px
+@media (max-width: 560px)
+    .feedback__items
+        padding: 30px 0
+    .feedback__disc
+        margin-bottom: 45px
+        margin-top: 15px
+    .services
+        margin-top: 30px
+    .news
+        margin-top: 30px
+        margin-bottom: 50px
+    .newsinner__content__minioffer
+        margin-top: 30px
+        margin-bottom: 30px
+    .newsinner__content__disc
+        p
+            font-size: 18px
+    .servises__item__name 
+        p
+            font-size: 18px
+    .servises__item__price
+        p
+            font-size: 18px
+    .header__information
+        display: none
+    .main__offer
+        h3
+            font-size: 34px
+    .news__items
+        margin-top: 25px
+    .present__info__offer
+        h3
+            font-size: 22px
+    .present__info__disc
+        margin-top: 20px
+        p   
+            font-size: 16px
+            line-height: unset
+            margin-bottom: 10px
+@media (max-width: 504px)
+    .burger__items
+        width: 83%
+@media (max-width: 500px)
+    .accordion
+        font-size: 18px
+@media (max-width: 480px)
+    .newsinner__content__list__item
+        p
+            font-size: 14px
+    .services__link__button
+        a
+            width: 160px
+            display: flex
+            font-size: 22px
+            &::after
+                right: 5px
+                top: 8px
+    .services__link__button
+        margin-right: 0
+    .services__link__button
+        margin-left: 25px
+    .services__img
+        width: 90%
+    .services__disc
+        margin-top: 10px
+    .feedback
+        margin-bottom: 30px
+    .services__offer
+        margin-bottom: 30px
+    .services__disc
+        p
+            font-size: 18px
+    .team__item__img
+        height: 334px
+    .Benefits
+        margin-top: 30px
+    .main__offer
+        h3
+            font-size: 20px
+    .Benefits__item__disc
+        p
+            font-size: 14px
+    .present__info__disc
+        p
+            font-size: 14px
+    .firstcreen__content
+        padding-top: 45px
+    .firstscreenitems
+        height: 100%
+    .firstcreen
+        padding-bottom: 80px
+    .present__img
+        margin-top: 130px
+    .firstcreen__disc
+        h2
+            font-size: 4vw
+    .present__info__offer
+        h3
+            font-size: 18px
+    .newsinner__offer
+        h1
+            font-size: 28px
+    .indexcontacts__disc__link
+        a
+            font-size: 28px
+    .indexcontacts__disc__info
+        margin-top: 15px
+    .indexcontacts__form__check
+        label
+            font-size: 12px
+    .news__main__item
+        width: 100%
+    .news__main__items
+        justify-content: center
+@media (max-width: 410px)
+    .servises__item__price
+        p
+            width: 58px
 @import config
 @import 'blocks/**/*'
